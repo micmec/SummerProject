@@ -1,0 +1,3 @@
+This first smart contract project is intended to be a practice in smart contract development.
+
+It was developed via the truffle framework, and via the same framework it can be deployed to a localhost blockchain (we used ganache-cli)
