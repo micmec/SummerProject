@@ -1,0 +1,104 @@
+{
+  "contractName": "Voting",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/emilyrussell/Documents/SummerProject/project-voting/contracts/Voting.sol\":\"Voting\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/emilyrussell/Documents/SummerProject/project-voting/contracts/Voting.sol\":{\"keccak256\":\"0x5969647c8041ef8ff56ce272f66d35138a60f06b58968da3357f4876e93814ea\",\"urls\":[\"bzzr://80ddf1c2633f2adc83ed62724a604dfb9641bca3214b42e483e87429b2f54479\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820910e6016e774da12bfc597b4694996d6d2445e040790520925879e1127ec4b530029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820910e6016e774da12bfc597b4694996d6d2445e040790520925879e1127ec4b530029",
+  "sourceMap": "25:24:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:24:1;;;;;;;",
+  "deployedSourceMap": "25:24:1:-;;;;;",
+  "source": "pragma solidity ^0.5.8;\n\ncontract Voting {\n    \n}",
+  "sourcePath": "/Users/emilyrussell/Documents/SummerProject/project-voting/contracts/Voting.sol",
+  "ast": {
+    "absolutePath": "/Users/emilyrussell/Documents/SummerProject/project-voting/contracts/Voting.sol",
+    "exportedSymbols": {
+      "Voting": [
+        56
+      ]
+    },
+    "id": 57,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 55,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 56,
+        "linearizedBaseContracts": [
+          56
+        ],
+        "name": "Voting",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 57,
+        "src": "25:24:1"
+      }
+    ],
+    "src": "0:49:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/emilyrussell/Documents/SummerProject/project-voting/contracts/Voting.sol",
+    "exportedSymbols": {
+      "Voting": [
+        56
+      ]
+    },
+    "id": 57,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 55,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 56,
+        "linearizedBaseContracts": [
+          56
+        ],
+        "name": "Voting",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 57,
+        "src": "25:24:1"
+      }
+    ],
+    "src": "0:49:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-08-23T13:40:04.069Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
