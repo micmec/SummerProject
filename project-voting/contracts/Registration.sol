@@ -1,7 +1,6 @@
 pragma experimental ABIEncoderV2;
 
 contract Registration {
-    Voter[] public voters;
 
     struct Voter {
         string firstName;
@@ -12,20 +11,12 @@ contract Registration {
     }
 
     mapping(address => Voter) public voters;
-    
+
     //pre-approved voters are inputted and added onto the list of valid voters.
     //the users address is used as their unique id this will allow registered voters to take part in polls later.
     function addVoter(string memory _firstName, string memory _lastName, uint _age, string memory _gender, address _useraddress)
     public returns (bool) {
-
-        Voter memory newVoter;
-        newVoter.firstName = _firstName;
-        newVoter.lastName = _lastName;
-        newVoter.age = _age;
-        newVoter.gender = _gender;
-        newVoter.useraddress = _useraddress;
-
-        voters.push(newVoter);
+        voters[_useraddress] = Voter(_firstName, _lastName, _age, _gender, _useraddress);
         return(true);
     }
 
