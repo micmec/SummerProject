@@ -1,6 +1,8 @@
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.8;
 
 contract Registration {
+
+    uint voterCount;
 
     struct Voter {
         string firstName;
@@ -16,6 +18,7 @@ contract Registration {
     //the users address is used as their unique id this will allow registered voters to take part in polls later.
     function addVoter(string memory _firstName, string memory _lastName, uint _age, string memory _gender, address _useraddress)
     public returns (bool) {
+        voterCount ++;
         voters[_useraddress] = Voter(_firstName, _lastName, _age, _gender, _useraddress);
         return(true);
     }
@@ -44,4 +47,4 @@ contract Registration {
 //         return(firstNames, lastNames, ages, genders, ids);
 //     }
 
-// }
+}
