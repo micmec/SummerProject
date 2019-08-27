@@ -17,16 +17,16 @@ contract("Registration", function(accounts){
     });
 
     
-
-    
-
-    // it("adds correct details to mapping", function(){
-    //     let voter = instance.voters("0xd66afc18aF7a12937E08Ae6f9a9654Ef1e2b3Dda");
-    //     asset.equal(voter[0],"Emily","contains correct first name");
-    //     assert.equal(voter[1],"Russell","contains correct last name");
-    //     assert.equal(voter[2],19,"contains correct age");
-    //     assert.equal(voter[3],"Female","contains correct gender");
-    //     assert.equal(voter[4],"0xd66afc18aF7a12937E08Ae6f9a9654Ef1e2b3Dda", "contains correct address");
-    // });
+    it("adds correct details to mapping", function(){
+        return Registration.deployed().then(function(instance) {
+            return instance.voters("0xd66afc18aF7a12937E08Ae6f9a9654Ef1e2b3Dda");
+        }).then(function(voter) {
+            assert.equal(voter[0],"Emily","contains correct first name");
+            assert.equal(voter[1],"Russell","contains correct last name");
+            assert.equal(voter[2],19,"contains correct age");
+            assert.equal(voter[3],"Female","contains correct gender");
+            assert.equal(voter[4],"0xd66afc18aF7a12937E08Ae6f9a9654Ef1e2b3Dda", "contains correct address");
+        });
+    });
 
 });
