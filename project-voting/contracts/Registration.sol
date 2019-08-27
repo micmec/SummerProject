@@ -3,7 +3,7 @@ pragma solidity ^0.5.8;
 contract Registration {
     //in Solidity there is no way to determine size of mapping or iterate over mapping because in the mapping any key that we haven't set a value for will automatically return a default value.
     //Therefore I have added a count of the number of Voters 'registered'
-    uint voterCount;
+    uint public voterCount;
 
     struct Voter {
         string firstName;

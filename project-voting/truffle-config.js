@@ -55,7 +55,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.5.8",    // Fetch exact version from solc-bin (default: truffle's version)
        optimizer: {
        enabled: false,
          runs: 200
