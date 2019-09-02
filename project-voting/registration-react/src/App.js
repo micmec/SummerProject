@@ -53,14 +53,6 @@ import './App.css';
 
 // export default new  Web3.eth.Contract(abi,address)
 
-function handleSubmit() {
-
-}
-
-function  handleChange() {
-
-}
-
 class App extends React.Component{
     constructor(props) {
         super(props);
@@ -69,17 +61,46 @@ class App extends React.Component{
           firstName: null,
           lastName: null,
           age: 0,
-          gender: null,
-          address: 0x0
+          gender: "Male",
+          address: 0x0,
           formErrors: {
             firstName: "",
             lastName: "",
-            age: "",
-            gender: ""
+            age: ""
           }
         };
 
-      }
+    }
+
+    handleChange(e) {
+        e.preventDefault()
+        const {name, value} = e.target
+        let formErrors = this.state.formErrors
+    
+        switch (name) {
+            case "firstName":
+              formErrors.firstName =
+                value.length < 2 && value.length >0 ? "minimum 2 characaters required" : ""
+              break;
+            case "lastName":
+              formErrors.lastName =
+                value.length < 3 & value.length >0 ? "minimum 3 characaters required" : ""
+              break;
+            case "age":
+              formErrors.age = isNaN(value) & value.length > 0
+                ? "age not valid, please enter a number"
+                : "";
+              break;
+            default:
+              break;
+          }  
+
+        this.setState({formErrors, [name]: value})
+    }
+
+    handleSubmit() {
+
+    }
 
     render() {
         return(
