@@ -62,26 +62,26 @@ class App extends React.Component{
                     <form onSubmit = {this.handleSubmit}>
                         <div className = "firstName">
                             <label htmlFor = "firstName">First Name</label>
-                            <input type = "text" name ="firstname"></input>
+                            <input type = "text" name ="firstname" onChange = {this.handleChange} ></input>
                         </div>
                         <div className = "lastName">
                             <label htmlFor = "lastName">Last Name</label>
-                            <input type = "text" name ="lastname"></input>
+                            <input type = "text" name ="lastname" onChange = {this.handleChange}></input>
                         </div>
                         <div className = "age">
                             <label htmlFor = "age">Age</label>
-                            <input type = "text" name ="age"></input>
+                            <input type = "number" name ="age" onChange = {this.handleChange}></input>
                         </div>
                         <div className = "gender">
                             <label htmlFor = "gender">Gender</label>
-                            <select name = "gender">
+                            <select name = "gender" onChange = {this.handleChange}>
                                 <option value = "Male">Male</option>
                                 <option value = "Female">Female</option>
                                 <option value ="Other">Other</option>
                             </select>
                         </div>
-                        <div classname = "register">
-                            <button type = "submit">Register</button>
+                        <div classname = "registerVoter">
+                            <button type = "submit" class = "register-button">Register</button>
                             <small>Already Registered to Vote?</small>
                         </div>
                     </form>
@@ -91,3 +91,4 @@ class App extends React.Component{
     }
 }
 
+export default App;
