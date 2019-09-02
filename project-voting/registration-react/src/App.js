@@ -53,7 +53,27 @@ import './App.css';
 
 // export default new  Web3.eth.Contract(abi,address)
 
+function handleSubmit() {
+
+}
+
+function  handleChange() {
+
+}
+
 class App extends React.Component{
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          firstName: null,
+          lastName: null,
+          age: 0,
+          gender: null,
+          address: 0x0
+        };
+      }
+
     render() {
         return(
             <div className = "wrapper">
@@ -82,7 +102,7 @@ class App extends React.Component{
                         </div>
                         <div classname = "registerVoter">
                             <button type = "submit" class = "register-button">Register</button>
-                            <small>Already Registered to Vote?</small>
+                            <small class = "register-small">Already Registered to Vote?</small>
                         </div>
                     </form>
                 </div>

@@ -112,7 +112,7 @@ input.error {
   border: 2px solid #fff;
 }
 
-.registerVoter small {
-  color: #999;
+.register-small {
+  color: #696969;
   font-weight: lighter;
 }
