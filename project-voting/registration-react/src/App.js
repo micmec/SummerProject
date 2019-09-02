@@ -103,6 +103,8 @@ class App extends React.Component{
     }
 
     render() {
+        const {formErrors} = this.state;
+        
         return(
             <div className = "wrapper">
                 <div className ="form-wrapper">
@@ -110,15 +112,24 @@ class App extends React.Component{
                     <form onSubmit = {this.handleSubmit}>
                         <div className = "firstName">
                             <label htmlFor = "firstName">First Name</label>
-                            <input type = "text" name ="firstname" onChange = {this.handleChange} ></input>
+                            <input type = "text" name ="firstname" onChange = {this.handleChange}/>
+                            {formErrors.firstName.length > 0 && (
+                                <span className="errorMessage">{formErrors.firstName}</span>
+                            )}
                         </div>
                         <div className = "lastName">
                             <label htmlFor = "lastName">Last Name</label>
-                            <input type = "text" name ="lastname" onChange = {this.handleChange}></input>
+                            <input type = "text" name ="lastname" onChange = {this.handleChange}/>
+                            {formErrors.lastName.length > 0 && (
+                                <span className="errorMessage">{formErrors.lastName}</span>
+                            )}
                         </div>
                         <div className = "age">
                             <label htmlFor = "age">Age</label>
-                            <input type = "number" name ="age" onChange = {this.handleChange}></input>
+                            <input type = "number" name ="age" onChange = {this.handleChange}/>
+                            {formErrors.age.length > 0 && (
+                                <span className="errorMessage">{formErrors.age}</span>
+                            )}
                         </div>
                         <div className = "gender">
                             <label htmlFor = "gender">Gender</label>
