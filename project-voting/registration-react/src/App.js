@@ -71,7 +71,14 @@ class App extends React.Component{
           age: 0,
           gender: null,
           address: 0x0
+          formErrors: {
+            firstName: "",
+            lastName: "",
+            age: "",
+            gender: ""
+          }
         };
+
       }
 
     render() {
